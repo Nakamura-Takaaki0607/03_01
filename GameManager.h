@@ -10,6 +10,12 @@
 
 class GameManager
 {
+public:
+	GameManager();
+	~GameManager();
+
+	int Run();
+
 private:
 	std::unique_ptr<IScene> sceneArr_[3];
 
@@ -18,10 +24,4 @@ private:
 
 	char keys[256] = { 0 };
 	char preKeys[256] = { 0 };
-
-public:
-	GameManager();
-	~GameManager();
-
-	int Run();
 };

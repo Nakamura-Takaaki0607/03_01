@@ -4,13 +4,6 @@
 
 class Bullet
 {
-private:
-	Vector2 pos_;
-	float size_;
-	int count_;
-	int speed_;
-	bool isDead_;
-
 public:
 	Bullet(Vector2 pos);
 	void Update();
@@ -19,4 +12,12 @@ public:
 	void OnCollision() { isDead_ = true; }
 	Vector2 GetPos() { return pos_; }
 	float GetSize() { return size_; }
+
+private:
+	Vector2 pos_;
+	float size_;
+	int count_;
+	int speed_;
+	bool isDead_;
+
 };

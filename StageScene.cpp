@@ -20,15 +20,14 @@ void StageScene::Update()
 
 	ChackAllCollisions();
 
-	if (keys_[DIK_RETURN] && !preKeys_[DIK_RETURN]) {
+	if (enemy->GetDead()) {
 		sceneNo = kClear;
 	}
 }
 
 void StageScene::Draw()
 {
-	Novice::ScreenPrintf(600, 350, "StageScene");
-	Novice::ScreenPrintf(590, 370, "Tap to ENTER");
+	Novice::ScreenPrintf(600, 360, "StageScene");
 	Novice::ScreenPrintf(0, 20, "UP / DOWN / LEFT / RIGHT");
 	Novice::ScreenPrintf(0, 60, "SPACE");
 	player->Draw();

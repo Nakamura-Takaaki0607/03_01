@@ -17,6 +17,6 @@ private:
 	Vector2 pos_;
 	float size_;
 	float speed_;
-	int isLeft_;
+	int isMove_;
 	bool isDead_;
 };
